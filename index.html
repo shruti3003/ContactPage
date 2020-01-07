@@ -33,7 +33,7 @@
       </div>
       <div class="w3-section">
         <label>Email</label>
-        <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.210850025">
+        <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.210850025" required="">
       </div>
       <div class="w3-section">
         <label>Message</label>
@@ -72,28 +72,28 @@
 
          }
 
-         function validateEmail () {
+//          function validateEmail () {
 
-          var email = document.getElementById('email').value;
-          if(email.length == 0) {
-            alert("Email can't be blank") ;//Validation Message
-            return false;
+//           var email = document.getElementById('email').value;
+//           if(email.length == 0) {
+//             alert("Email can't be blank") ;//Validation Message
+//             return false;
 
-          }
+//           }
 
-          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}*[\.][a-z]{2,4}$/)) {
-            alert("Please enter a correct email address") ;//Validation Message
-            return false;
+//           if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}*[\.][a-z]{2,4}$/)) {
+//             alert("Please enter a correct email address") ;//Validation Message
+//             return false;
 
-          }
+//           }
 
-          return true;
+//           return true;
 
-        }
+//         }
 
 
         function validateForm() {
-          if (!validateName() || !validateMessage() || !validateEmail()) {
+          if (!validateName() || !validateMessage()) {
 
             alert("Form not submitted");//Validation Message
             return false;
